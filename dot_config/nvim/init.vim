@@ -11,6 +11,7 @@ Plug 'nvim-tree/nvim-web-devicons'
 Plug 'kana/vim-textobj-user'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'hashivim/vim-terraform'
+Plug 'tpope/vim-surround'
 
 call plug#end()
 
