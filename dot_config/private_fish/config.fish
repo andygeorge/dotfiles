@@ -6,16 +6,18 @@ clear
 #set -x PATH $HOME/.rbenv/bin $PATH
 #rbenv init - | source
 
-# golang setup
-set -x PATH $PATH /usr/local/go/bin
 set -x PATH $PATH /home/andygeorge/go/bin
 set -x PATH $PATH /home/andygeorge/bin
+set -x PATH $PATH /home/andygeorge/.cargo/bin
+
+# golang setup
+set -x PATH $PATH /usr/local/go/bin
 
 # homebrew setup
 set -x PATH $PATH /home/linuxbrew/.linuxbrew/bin
 
 # chezmoi
-set -x EDITOR vim
+set -x EDITOR vi
 
 function fish_greeting
     fortune
