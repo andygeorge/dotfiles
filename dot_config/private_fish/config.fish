@@ -20,7 +20,7 @@ set -x EDITOR vim
 function fish_greeting
     fortune
 end
-# 
-# function fish_prompt
-#   #
-# end
+
+if status is-interactive
+    atuin init fish | source
+end
