@@ -23,6 +23,6 @@ function fish_greeting
     fortune
 end
 
-if status is-interactive
-    atuin init fish | source
-end
+#if status is-interactive
+#    atuin init fish | source
+#end
