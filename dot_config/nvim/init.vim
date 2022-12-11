@@ -12,6 +12,7 @@ Plug 'kana/vim-textobj-user'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'hashivim/vim-terraform'
 Plug 'tpope/vim-surround'
+Plug 'flazz/vim-colorschemes'
 
 call plug#end()
 
