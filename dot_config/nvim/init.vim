@@ -2,12 +2,9 @@ set guicursor=
 
 call plug#begin()
 
-" telescope
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 Plug 'nvim-tree/nvim-web-devicons'
-
-" misc plugins
 Plug 'kana/vim-textobj-user'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'hashivim/vim-terraform'
