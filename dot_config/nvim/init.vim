@@ -25,3 +25,5 @@ nnoremap <leader>fb :Telescope buffers<cr>
 nnoremap <leader>fh :Telescope help_tags<cr>
 
 colorscheme blazer
+set number
+set nu
