@@ -1,7 +1,9 @@
+set mouse=a
 set guicursor=
 
 call plug#begin()
 
+Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'nvim-lua/plenary.nvim'
@@ -18,8 +20,9 @@ Plug 'SidOfc/carbon.nvim'
 call plug#end()
 
 " Shortcuts
-nnoremap <leader>sv :source $MYVIMRC<CR>
-nnoremap <leader>pp :PlugInstall<CR>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader>pp :PlugUpdate<cr>
+nnoremap <leader>po :PlugClean!<cr>
 nnoremap <leader>ff :Telescope find_files<cr>
 nnoremap <leader>fg :Telescope live_grep<cr>
 nnoremap <leader>fb :Telescope buffers<cr>
