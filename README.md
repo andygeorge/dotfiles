@@ -4,6 +4,8 @@ Managed using [`chezmoi`](https://www.chezmoi.io).
 
 ### Prerequisites
 
+- `clang`
+
 - [`vim-plug`](https://github.com/junegunn/vim-plug#unix-linux):
 ```sh
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
@@ -11,7 +13,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 ```
 - [`minimap`](https://github.com/wfxr/code-minimap):
 ```sh
-cargo install minimap
+cargo install minimap code-minimap
 ```
 
 ### Install `chezmoi` and dotfiles:
