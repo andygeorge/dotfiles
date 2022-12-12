@@ -24,6 +24,8 @@ nnoremap <leader>ff :Telescope find_files<cr>
 nnoremap <leader>fg :Telescope live_grep<cr>
 nnoremap <leader>fb :Telescope buffers<cr>
 nnoremap <leader>fh :Telescope help_tags<cr>
+nnoremap <C-Down>   :bnext<cr>
+nnoremap <C-Up>     :bprevious<cr>
 
 " Config
 let g:airline#extensions#tabline#enabled = 1
