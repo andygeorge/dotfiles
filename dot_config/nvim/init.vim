@@ -25,15 +25,15 @@ nnoremap <leader>fg :Telescope live_grep<cr>
 nnoremap <leader>fb :Telescope buffers<cr>
 nnoremap <leader>fh :Telescope help_tags<cr>
 
-" Carbon
-lua << EOF
-  require('carbon').setup(function(settings)
-    settings.carbon-setting-keep-netrw = 'false'
-  end)
-EOF
-
 " Config
 let g:airline#extensions#tabline#enabled = 1
 colorscheme blazer
 set number
 set nu
+
+" Carbon
+lua << EOF
+  require('carbon').setup(function(settings)
+    settings.keep_netrw = 'false'
+  end)
+EOF
