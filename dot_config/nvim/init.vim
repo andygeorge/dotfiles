@@ -18,11 +18,11 @@ Plug 'SidOfc/carbon.nvim'
 call plug#end()
 
 " Carbon
-lua << EOF
-  require('carbon').setup({
-    setting = 'value',
-  })
-EOF
+"lua << EOF
+"  require('carbon').setup({
+"    carbon-setting-keep-netrw = 'false',
+"  })
+"EOF
 
 " Shortcuts
 nnoremap <leader>sv :source $MYVIMRC<CR>
