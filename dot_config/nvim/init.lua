@@ -1,3 +1,3 @@
 require('carbon').setup({
-  setting = 'value',
+	carbon-setting-keep-netrw = 'false'
 })
