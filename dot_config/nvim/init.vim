@@ -13,8 +13,16 @@ Plug 'hashivim/vim-terraform'
 Plug 'tpope/vim-surround'
 Plug 'flazz/vim-colorschemes'
 Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap' }
+Plug 'SidOfc/carbon.nvim'
 
 call plug#end()
+
+" Carbon
+lua << EOF
+  require('carbon').setup({
+    setting = 'value',
+  })
+EOF
 
 " Shortcuts
 nnoremap <leader>sv :source $MYVIMRC<CR>
