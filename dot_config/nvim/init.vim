@@ -1,5 +1,10 @@
 set mouse=a
 set guicursor=
+set tabstop=2 shiftwidth=2 softtabstop=2
+set autoindent
+set nowrap
+set number
+set nu
 
 call plug#begin()
 
@@ -33,8 +38,7 @@ nnoremap <C-Up>     :bprevious<cr>
 " Config
 let g:airline#extensions#tabline#enabled = 1
 colorscheme blazer
-set number
-set nu
+
 
 " Carbon
 lua << EOF
