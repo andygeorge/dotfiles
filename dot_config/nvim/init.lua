@@ -1,3 +1,3 @@
-require('carbon').setup({
-	carbon-setting-keep-netrw = 'false'
-})
+require('carbon').setup(function(settings)
+  settings.carbon-setting-keep-netrw = 'false'
+end)

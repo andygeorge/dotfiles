@@ -17,13 +17,6 @@ Plug 'SidOfc/carbon.nvim'
 
 call plug#end()
 
-" Carbon
-"lua << EOF
-"  require('carbon').setup({
-"    carbon-setting-keep-netrw = 'false',
-"  })
-"EOF
-
 " Shortcuts
 nnoremap <leader>sv :source $MYVIMRC<CR>
 nnoremap <leader>pp :PlugInstall<CR>
@@ -31,6 +24,13 @@ nnoremap <leader>ff :Telescope find_files<cr>
 nnoremap <leader>fg :Telescope live_grep<cr>
 nnoremap <leader>fb :Telescope buffers<cr>
 nnoremap <leader>fh :Telescope help_tags<cr>
+
+" Carbon
+lua << EOF
+  require('carbon').setup(function(settings)
+    settings.carbon-setting-keep-netrw = 'false'
+  end)
+EOF
 
 " Config
 let g:airline#extensions#tabline#enabled = 1
