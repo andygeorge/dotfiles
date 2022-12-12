@@ -2,6 +2,8 @@ set guicursor=
 
 call plug#begin()
 
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 Plug 'nvim-tree/nvim-web-devicons'
@@ -22,6 +24,8 @@ nnoremap <leader>fg :Telescope live_grep<cr>
 nnoremap <leader>fb :Telescope buffers<cr>
 nnoremap <leader>fh :Telescope help_tags<cr>
 
+" Config
+let g:airline#extensions#tabline#enabled = 1
 colorscheme blazer
 set number
 set nu
