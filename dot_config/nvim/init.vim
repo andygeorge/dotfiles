@@ -5,6 +5,8 @@ set autoindent
 set nowrap
 set number
 set nu
+set list
+set listchars=tab:▸\ ,trail:·,nbsp:_
 
 call plug#begin()
 
