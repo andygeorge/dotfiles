@@ -12,7 +12,7 @@ Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'kana/vim-textobj-user'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
