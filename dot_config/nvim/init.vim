@@ -27,7 +27,8 @@ Plug 'SidOfc/carbon.nvim'
 call plug#end()
 
 " Shortcuts
-nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader>vv :source $MYVIMRC<cr>
+nnoremap <leader>ww :Lcarbon<cr>
 nnoremap <leader>pp :PlugUpdate<cr>
 nnoremap <leader>po :PlugClean!<cr>
 nnoremap <leader>ff :Telescope find_files<cr>
