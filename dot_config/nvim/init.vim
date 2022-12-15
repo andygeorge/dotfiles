@@ -22,7 +22,6 @@ Plug 'hashivim/vim-terraform'
 Plug 'tpope/vim-surround'
 Plug 'flazz/vim-colorschemes'
 Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap' }
-Plug 'SidOfc/carbon.nvim'
 Plug 'preservim/nerdtree'
 
 call plug#end()
@@ -43,10 +42,3 @@ nnoremap <C-Up>     :bprevious<cr>
 let g:airline#extensions#tabline#enabled = 1
 colorscheme blazer
 
-
-" Carbon
-lua << EOF
-  require('carbon').setup(function(settings)
-    settings.keep_netrw = 'false'
-  end)
-EOF
