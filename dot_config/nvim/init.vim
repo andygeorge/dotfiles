@@ -23,12 +23,13 @@ Plug 'tpope/vim-surround'
 Plug 'flazz/vim-colorschemes'
 Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap' }
 Plug 'SidOfc/carbon.nvim'
+Plug 'preservim/nerdtree'
 
 call plug#end()
 
 " Shortcuts
 nnoremap <leader>vv :source $MYVIMRC<cr>
-nnoremap <leader>ww :Lcarbon<cr>
+nnoremap <leader>ww :NERDTree<cr>
 nnoremap <leader>pp :PlugUpdate<cr>
 nnoremap <leader>po :PlugClean!<cr>
 nnoremap <leader>ff :Telescope find_files<cr>
