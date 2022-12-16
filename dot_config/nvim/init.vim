@@ -71,5 +71,6 @@ require'nvim-treesitter.configs'.setup {
 	ensure_installed = "all",
 }
 require("noice").setup()
+require('Comment').setup()
 EOF
 
