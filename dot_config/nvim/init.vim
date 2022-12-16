@@ -22,10 +22,10 @@ Plug 'tpope/vim-surround'
 Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap' }
 Plug 'preservim/nerdtree'
 Plug 'code-biscuits/nvim-biscuits'
-Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.1.*' }
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
 Plug 'ayu-theme/ayu-vim'
+Plug 'romgrk/barbar.nvim'
 "Plug 'flazz/vim-colorschemes'
 
 call plug#end()
@@ -46,17 +46,15 @@ nnoremap <C-Down>   :bnext<cr>
 nnoremap <C-Up>     :bprevious<cr>
 
 " Config
-let g:airline#extensions#tabline#enabled = 0 " tabs: use bufferline, not airline
+let g:airline#extensions#tabline#enabled = 0 " don't use airline tabs
 let g:airline_powerline_fonts = 1
 set guifont=mononoki-Regular\ Nerd\ Font\ Complete\ Mono\ 11
-"set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete\ 11
 set termguicolors
 let ayucolor="mirage"
 colorscheme ayu
 "colorscheme blazer " from 'flazz/vim-colorschemes'
 
 lua << EOF
-require("bufferline").setup{}
 require('nvim-biscuits').setup({
 	toggle_keybind = "<leader>bb",
 })
