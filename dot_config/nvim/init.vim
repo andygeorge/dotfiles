@@ -24,7 +24,8 @@ Plug 'flazz/vim-colorschemes'
 Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap' }
 Plug 'preservim/nerdtree'
 Plug 'code-biscuits/nvim-biscuits'
-Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
+Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.1.*' }
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
@@ -42,6 +43,7 @@ nnoremap <C-Up>     :bprevious<cr>
 
 " Config
 let g:airline#extensions#tabline#enabled = 0
+let g:airline_powerline_fonts = 1
 colorscheme blazer
 
 lua << EOF
