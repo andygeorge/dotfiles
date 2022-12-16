@@ -15,7 +15,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
-Plug 'nvim-tree/nvim-web-devicons'
 Plug 'kana/vim-textobj-user'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'hashivim/vim-terraform'
@@ -25,6 +24,7 @@ Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap' }
 Plug 'preservim/nerdtree'
 Plug 'code-biscuits/nvim-biscuits'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.1.*' }
+Plug 'nvim-tree/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
@@ -42,7 +42,7 @@ nnoremap <C-Down>   :bnext<cr>
 nnoremap <C-Up>     :bprevious<cr>
 
 " Config
-let g:airline#extensions#tabline#enabled = 0
+let g:airline#extensions#tabline#enabled = 0 " tabs: use bufferline, not airline
 let g:airline_powerline_fonts = 1
 colorscheme blazer
 set guifont=mononoki-Regular\ Nerd\ Font\ Complete\ Mono\ 11
@@ -50,9 +50,7 @@ set guifont=mononoki-Regular\ Nerd\ Font\ Complete\ Mono\ 11
 lua << EOF
 require("bufferline").setup{}
 require('nvim-biscuits').setup({
-	toggle_keybind = "<leader>cb",
-	cursor_line_only = true,
-	show_on_start = true,
+	toggle_keybind = "<leader>bb",
 })
 require'nvim-treesitter.configs'.setup {
 	ensure_installed = "all",
