@@ -26,11 +26,16 @@ Plug 'nvim-tree/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
 Plug 'ayu-theme/ayu-vim'
 Plug 'romgrk/barbar.nvim'
+
+" Noice
+Plug 'folke/noice.nvim'
+Plug 'MunifTanjim/nui.nvim'
+Plug 'rcarriga/nvim-notify'
+
+" Plugin Graveyard
 "Plug 'flazz/vim-colorschemes'
 
 call plug#end()
-
-
 
 " Shortcuts
 nnoremap <leader>vv :source $MYVIMRC<cr>
@@ -52,6 +57,8 @@ set guifont=mononoki-Regular\ Nerd\ Font\ Complete\ Mono\ 11
 set termguicolors
 let ayucolor="mirage"
 colorscheme ayu
+
+" Config Graveyard
 "colorscheme blazer " from 'flazz/vim-colorschemes'
 
 lua << EOF
@@ -61,5 +68,6 @@ require('nvim-biscuits').setup({
 require'nvim-treesitter.configs'.setup {
 	ensure_installed = "all",
 }
+require("noice").setup()
 EOF
 
