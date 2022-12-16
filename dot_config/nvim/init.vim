@@ -45,6 +45,7 @@ nnoremap <C-Up>     :bprevious<cr>
 let g:airline#extensions#tabline#enabled = 0
 let g:airline_powerline_fonts = 1
 colorscheme blazer
+set guifont=mononoki-Regular\ Nerd\ Font\ Complete\ Mono\ 11
 
 lua << EOF
 require("bufferline").setup{}
