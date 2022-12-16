@@ -1,15 +1,7 @@
-set mouse=a
-set guicursor=
-set tabstop=2 shiftwidth=2 softtabstop=2
-set autoindent
-set nowrap
-set number
-set nu
-set list
-set listchars=tab:▸\ ,trail:·,nbsp:_
+" Neovim Config
 
+" `vim-plug`
 call plug#begin()
-
 Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -26,15 +18,15 @@ Plug 'nvim-tree/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
 Plug 'ayu-theme/ayu-vim'
 Plug 'romgrk/barbar.nvim'
+Plug 'numToStr/Comment.nvim'
 
-" Noice
+"" Noice
 Plug 'folke/noice.nvim'
 Plug 'MunifTanjim/nui.nvim'
 Plug 'rcarriga/nvim-notify'
 
-" Plugin Graveyard
+"" Plugin Graveyard
 "Plug 'flazz/vim-colorschemes'
-
 call plug#end()
 
 " Shortcuts
@@ -51,6 +43,15 @@ nnoremap <C-Down>   :bnext<cr>
 nnoremap <C-Up>     :bprevious<cr>
 
 " Config
+set mouse=a
+set guicursor=
+set tabstop=2 shiftwidth=2 softtabstop=2
+set autoindent
+set nowrap
+set number
+set nu
+set list
+set listchars=tab:▸\ ,trail:·,nbsp:_
 let g:airline#extensions#tabline#enabled = 0 " don't use airline tabs
 let g:airline_powerline_fonts = 1
 set guifont=mononoki-Regular\ Nerd\ Font\ Complete\ Mono\ 11
@@ -61,6 +62,7 @@ colorscheme ayu
 " Config Graveyard
 "colorscheme blazer " from 'flazz/vim-colorschemes'
 
+" Lua Config
 lua << EOF
 require('nvim-biscuits').setup({
 	toggle_keybind = "<leader>bb",
