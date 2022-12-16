@@ -7,6 +7,7 @@ set number
 set nu
 set list
 set listchars=tab:▸\ ,trail:·,nbsp:_
+set termguicolors " req for bufferline
 
 call plug#begin()
 
@@ -23,6 +24,8 @@ Plug 'tpope/vim-surround'
 Plug 'flazz/vim-colorschemes'
 Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap' }
 Plug 'preservim/nerdtree'
+Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
+Plug 'code-biscuits/nvim-biscuits'
 
 call plug#end()
 
@@ -41,4 +44,8 @@ nnoremap <C-Up>     :bprevious<cr>
 " Config
 let g:airline#extensions#tabline#enabled = 1
 colorscheme blazer
+lua << EOF
+require("bufferline").setup{}
+require('nvim-biscuits').setup({})
+EOF
 
