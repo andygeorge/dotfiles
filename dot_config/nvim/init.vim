@@ -19,18 +19,22 @@ Plug 'kana/vim-textobj-user'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'hashivim/vim-terraform'
 Plug 'tpope/vim-surround'
-Plug 'flazz/vim-colorschemes'
 Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap' }
 Plug 'preservim/nerdtree'
 Plug 'code-biscuits/nvim-biscuits'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.1.*' }
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
+Plug 'ayu-theme/ayu-vim'
+"Plug 'flazz/vim-colorschemes'
 
 call plug#end()
 
+
+
 " Shortcuts
 nnoremap <leader>vv :source $MYVIMRC<cr>
+nnoremap <leader>cc :!chezmoi apply<cr>
 nnoremap <leader>ww :NERDTreeFocus<cr>
 nnoremap <leader>pp :PlugUpdate<cr>
 nnoremap <leader>po :PlugClean!<cr>
@@ -44,8 +48,11 @@ nnoremap <C-Up>     :bprevious<cr>
 " Config
 let g:airline#extensions#tabline#enabled = 0 " tabs: use bufferline, not airline
 let g:airline_powerline_fonts = 1
-colorscheme blazer
 set guifont=mononoki-Regular\ Nerd\ Font\ Complete\ Mono\ 11
+set termguicolors
+let ayucolor="mirage"
+colorscheme ayu
+"colorscheme blazer " from 'flazz/vim-colorschemes'
 
 lua << EOF
 require("bufferline").setup{}
