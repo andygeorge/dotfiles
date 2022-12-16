@@ -49,6 +49,7 @@ nnoremap <C-Up>     :bprevious<cr>
 let g:airline#extensions#tabline#enabled = 0 " tabs: use bufferline, not airline
 let g:airline_powerline_fonts = 1
 set guifont=mononoki-Regular\ Nerd\ Font\ Complete\ Mono\ 11
+"set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete\ 11
 set termguicolors
 let ayucolor="mirage"
 colorscheme ayu
