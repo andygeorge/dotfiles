@@ -27,7 +27,6 @@ Plug 'rcarriga/nvim-notify'
 "" Colorschemes
 Plug 'ayu-theme/ayu-vim'
 Plug 'sainnhe/everforest'
-Plug 'altercation/vim-colors-solarized'
 
 "" Plugin Graveyard
 "Plug 'flazz/vim-colorschemes'
