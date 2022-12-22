@@ -16,7 +16,6 @@ Plug 'preservim/nerdtree'
 Plug 'code-biscuits/nvim-biscuits'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
-Plug 'ayu-theme/ayu-vim'
 Plug 'romgrk/barbar.nvim'
 Plug 'numToStr/Comment.nvim'
 
@@ -24,6 +23,9 @@ Plug 'numToStr/Comment.nvim'
 Plug 'folke/noice.nvim'
 Plug 'MunifTanjim/nui.nvim'
 Plug 'rcarriga/nvim-notify'
+
+"" Colorschemes
+Plug 'ayu-theme/ayu-vim'
 
 "" Plugin Graveyard
 "Plug 'flazz/vim-colorschemes'
