@@ -2,6 +2,7 @@
 
 " `vim-plug`
 call plug#begin()
+
 Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -25,12 +26,13 @@ Plug 'MunifTanjim/nui.nvim'
 Plug 'rcarriga/nvim-notify'
 
 "" Colorschemes
-Plug 'ayu-theme/ayu-vim'
-Plug 'sainnhe/everforest'
 Plug 'rafi/awesome-vim-colorschemes'
 
 "" Plugin Graveyard
+"Plug 'ayu-theme/ayu-vim'
 "Plug 'flazz/vim-colorschemes'
+"Plug 'sainnhe/everforest'
+
 call plug#end()
 
 " Shortcuts
@@ -61,10 +63,11 @@ let g:airline_powerline_fonts = 1
 set guifont=mononoki-Regular\ Nerd\ Font\ Complete\ Mono\ 11
 set termguicolors
 let ayucolor="mirage"
-colorscheme ayu
+colorscheme focuspoint
 
 " Config Graveyard
 "colorscheme blazer " from 'flazz/vim-colorschemes'
+"colorscheme ayu " from 'ayu-theme/ayu-vim'
 
 " Lua Config
 lua << EOF
