@@ -61,8 +61,12 @@ set listchars=tab:▸\ ,trail:·,nbsp:_
 let g:airline#extensions#tabline#enabled = 0 " don't use airline tabs
 let g:airline_powerline_fonts = 1
 set guifont=mononoki-Regular\ Nerd\ Font\ Complete\ Mono\ 11
+
+" Colorscheme Config
 set termguicolors
 colorscheme focuspoint
+highlight Normal guibg=#181818
+highlight Comment cterm=italic gui=italic guifg=#777777
 
 " Config Graveyard
 "colorscheme blazer " from 'flazz/vim-colorschemes'
