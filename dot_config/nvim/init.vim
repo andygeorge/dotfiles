@@ -62,12 +62,12 @@ let g:airline#extensions#tabline#enabled = 0 " don't use airline tabs
 let g:airline_powerline_fonts = 1
 set guifont=mononoki-Regular\ Nerd\ Font\ Complete\ Mono\ 11
 set termguicolors
-let ayucolor="mirage"
 colorscheme focuspoint
 
 " Config Graveyard
 "colorscheme blazer " from 'flazz/vim-colorschemes'
 "colorscheme ayu " from 'ayu-theme/ayu-vim'
+"colorscheme jellybeans " from 'rafi/awesome-vim-colorschemes'
 
 " Lua Config
 lua << EOF
