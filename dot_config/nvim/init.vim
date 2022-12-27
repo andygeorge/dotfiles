@@ -65,7 +65,6 @@ set guifont=mononoki-Regular\ Nerd\ Font\ Complete\ Mono\ 11
 " Colorscheme Config
 set termguicolors
 colorscheme focuspoint
-highlight Normal guibg=#181818
 highlight Comment cterm=italic gui=italic guifg=#777777
 
 " Config Graveyard
