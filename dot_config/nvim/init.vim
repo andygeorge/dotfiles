@@ -45,8 +45,13 @@ nnoremap <leader>ff :Telescope find_files<cr>
 nnoremap <leader>fg :Telescope live_grep<cr>
 nnoremap <leader>fb :Telescope buffers<cr>
 nnoremap <leader>fh :Telescope help_tags<cr>
-nnoremap <C-Down>   :bnext<cr>
-nnoremap <C-Up>     :bprevious<cr>
+nnoremap <C-Down> :bnext<cr>
+nnoremap <C-Up> :bprevious<cr>
+
+"" I can't quit you
+noremap <C-a> ggVG
+vnoremap <C-C> "+y
+noremap <C-V> "+gP
 
 " Config
 set mouse=a
@@ -58,6 +63,7 @@ set number
 set nu
 set list
 set listchars=tab:▸\ ,trail:·,nbsp:_
+set keymodel=startsel
 let g:airline#extensions#tabline#enabled = 0 " don't use airline tabs
 let g:airline_powerline_fonts = 1
 set guifont=mononoki-Regular\ Nerd\ Font\ Complete\ Mono\ 11
