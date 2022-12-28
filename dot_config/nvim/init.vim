@@ -12,7 +12,6 @@ Plug 'kana/vim-textobj-user'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'hashivim/vim-terraform'
 Plug 'tpope/vim-surround'
-Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap' }
 Plug 'preservim/nerdtree'
 Plug 'code-biscuits/nvim-biscuits'
 Plug 'nvim-tree/nvim-web-devicons'
@@ -32,6 +31,7 @@ Plug 'rafi/awesome-vim-colorschemes'
 "Plug 'ayu-theme/ayu-vim'
 "Plug 'flazz/vim-colorschemes'
 "Plug 'sainnhe/everforest'
+"Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap' }
 
 call plug#end()
 
