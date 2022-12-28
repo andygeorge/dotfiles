@@ -38,7 +38,7 @@ call plug#end()
 " Shortcuts
 nnoremap <leader>vv :source $MYVIMRC<cr>
 nnoremap <leader>cc :!chezmoi apply<cr>
-nnoremap <leader>ww :NERDTreeFocus<cr>
+nnoremap <leader>w :NERDTreeFocus<cr>
 nnoremap <leader>pp :PlugUpdate<cr>
 nnoremap <leader>po :PlugClean!<cr>
 nnoremap <leader>ff :Telescope find_files<cr>
