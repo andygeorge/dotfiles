@@ -82,7 +82,7 @@ highlight Comment cterm=italic gui=italic guifg=#777777
 " Lua Config
 lua << EOF
 require('nvim-biscuits').setup({
-	toggle_keybind = "<leader>bb",
+	toggle_keybind = "<leader>b",
 })
 require'nvim-treesitter.configs'.setup {
 	ensure_installed = "all",
