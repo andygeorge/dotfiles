@@ -52,6 +52,7 @@ nnoremap <C-Up> :bprevious<cr>
 noremap <C-a> ggVG
 vnoremap <C-C> "+y
 noremap <C-V> "+gP
+noremap <C-X> "+d
 
 " Config
 set mouse=a
