@@ -53,6 +53,7 @@ noremap <C-a> ggVG
 vnoremap <C-C> "+y
 noremap <C-V> "+gP
 noremap <C-X> "+d
+noremap <C-s> :w<cr>
 
 " Config
 set mouse=a
