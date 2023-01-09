@@ -6,8 +6,6 @@ call plug#begin()
 Plug 'vim-airline/vim-airline' " fancy status bar
 Plug 'preservim/nerdtree' " file system explorer
 Plug 'code-biscuits/nvim-biscuits' " fancy end of blocks: \b
-Plug 'nvim-tree/nvim-web-devicons'
-Plug 'ryanoasis/vim-devicons'
 Plug 'romgrk/barbar.nvim' " fancy tabline
 Plug 'numToStr/Comment.nvim' " easy comments: gcc gbc
 Plug 'mhinz/vim-signify' " git changes sidebar
@@ -25,8 +23,10 @@ Plug 'rcarriga/nvim-notify'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'hashivim/vim-terraform'
 
-"" Colorschemes
+"" Colorschemes etc
 Plug 'rafi/awesome-vim-colorschemes'
+Plug 'nvim-tree/nvim-web-devicons'
+Plug 'ryanoasis/vim-devicons'
 
 "" Used?
 " Plug 'kana/vim-textobj-user'
