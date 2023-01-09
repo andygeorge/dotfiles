@@ -3,35 +3,42 @@
 " `vim-plug`
 call plug#begin()
 
-Plug 'tpope/vim-sensible'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
-Plug 'kana/vim-textobj-user'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'hashivim/vim-terraform'
-Plug 'tpope/vim-surround'
-Plug 'preservim/nerdtree'
-Plug 'code-biscuits/nvim-biscuits'
+Plug 'vim-airline/vim-airline' " fancy status bar
+Plug 'preservim/nerdtree' " file system explorer
+Plug 'code-biscuits/nvim-biscuits' " fancy end of blocks: \b
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
-Plug 'romgrk/barbar.nvim'
-Plug 'numToStr/Comment.nvim'
+Plug 'romgrk/barbar.nvim' " fancy tabline
+Plug 'numToStr/Comment.nvim' " easy comments: gcc gbc
+Plug 'mhinz/vim-signify' " git changes sidebar
 
-"" Noice
+"" Telescope: fuzzy search: \ff \fg \fb
+Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' } "
+Plug 'nvim-lua/plenary.nvim'
+
+"" Noice: fancy messages
 Plug 'folke/noice.nvim'
 Plug 'MunifTanjim/nui.nvim'
 Plug 'rcarriga/nvim-notify'
 
+"" Syntax coloring
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'hashivim/vim-terraform'
+
 "" Colorschemes
 Plug 'rafi/awesome-vim-colorschemes'
+
+"" Used?
+" Plug 'kana/vim-textobj-user'
+" Plug 'tpope/vim-surround'
+" Plug 'tpope/vim-sensible'
 
 "" Plugin Graveyard
 "Plug 'ayu-theme/ayu-vim'
 "Plug 'flazz/vim-colorschemes'
 "Plug 'sainnhe/everforest'
 "Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap' }
+" Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
