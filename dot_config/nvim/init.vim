@@ -9,6 +9,7 @@ Plug 'code-biscuits/nvim-biscuits' " fancy end of blocks: \b
 Plug 'romgrk/barbar.nvim' " fancy tabline
 Plug 'numToStr/Comment.nvim' " easy comments: gcc gbc
 Plug 'mhinz/vim-signify' " git changes sidebar
+Plug 'mhinz/vim-startify' " fancy start screen
 
 "" Telescope: fuzzy search: \ff \fg \fb
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' } "
