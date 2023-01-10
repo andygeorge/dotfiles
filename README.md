@@ -22,7 +22,7 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply andygeorge && ln -s ~/bin/c
 sudo rm -rf /usr/bin/vi && sudo ln -s /usr/bin/nvim /usr/bin/vi
 ```
 
-### `chezmoi` commands
+### Helpful `chezmoi` commands:
 
 ```sh
 cm update
