@@ -21,3 +21,13 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply andygeorge && ln -s ~/bin/c
 ```sh
 sudo rm -rf /usr/bin/vi && sudo ln -s /usr/bin/nvim /usr/bin/vi
 ```
+
+### `chezmoi` commands
+
+```sh
+cm update
+cm apply
+cm edit
+cm managed
+cm cd
+```
