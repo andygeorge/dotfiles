@@ -30,16 +30,16 @@ Plug 'nvim-tree/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
 
 "" Used?
-" Plug 'kana/vim-textobj-user'
-" Plug 'tpope/vim-surround'
-" Plug 'tpope/vim-sensible'
+"Plug 'kana/vim-textobj-user'
+"Plug 'tpope/vim-surround'
+"Plug 'tpope/vim-sensible'
 
 "" Plugin Graveyard
 "Plug 'ayu-theme/ayu-vim'
 "Plug 'flazz/vim-colorschemes'
 "Plug 'sainnhe/everforest'
 "Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap' }
-" Plug 'vim-airline/vim-airline-themes'
+"Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
