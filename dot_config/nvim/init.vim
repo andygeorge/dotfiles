@@ -10,6 +10,7 @@ Plug 'romgrk/barbar.nvim' " fancy tabline
 Plug 'numToStr/Comment.nvim' " easy comments: gcc gbc
 Plug 'mhinz/vim-signify' " git changes sidebar
 Plug 'mhinz/vim-startify' " fancy start screen
+Plug 'nvim-zh/colorful-winsep.nvim' " fancy window seperators
 
 "" Telescope: fuzzy search: \ff \fg \fb
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' } "
@@ -98,5 +99,19 @@ require'nvim-treesitter.configs'.setup {
 }
 require("noice").setup()
 require('Comment').setup()
+require("colorful-winsep").setup({
+	-- default config: https://github.com/nvim-zh/colorful-winsep.nvim#default-configuration
+  highlight = {
+    bg = "#16161E",
+    fg = "#1F3442",
+  },
+  interval = 30,
+  no_exec_files = { "packer", "TelescopePrompt", "mason", "CompetiTest", "NvimTree" },
+  symbols = { "━", "┃", "┏", "┓", "┗", "┛" },
+  close_event = function()
+  end,
+  create_event = function()
+  end,
+})
 EOF
 
