@@ -11,6 +11,7 @@ Plug 'numToStr/Comment.nvim' " easy comments: gcc gbc
 Plug 'mhinz/vim-signify' " git changes sidebar
 Plug 'mhinz/vim-startify' " fancy start screen
 Plug 'nvim-zh/colorful-winsep.nvim' " fancy window seperators
+Plug 'gen740/SmoothCursor.nvim' " fancy cursor
 
 "" Telescope: fuzzy search: \ff \fg \fb
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' } "
@@ -112,6 +113,11 @@ require("colorful-winsep").setup({
   end,
   create_event = function()
   end,
+})
+require('smoothcursor').setup({
+	fancy = {
+		enable = true,
+	},
 })
 EOF
 
