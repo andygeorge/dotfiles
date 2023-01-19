@@ -14,7 +14,6 @@ Plug 'nvim-zh/colorful-winsep.nvim' " fancy window seperators
 Plug 'gen740/SmoothCursor.nvim' " fancy cursor
 Plug 'machakann/vim-highlightedyank' " highlight yanked text
 Plug 'LudoPinelli/comment-box.nvim' " fancy comments
-Plug 'nathanaelkane/vim-indent-guides' " fancy indent levels
 
 "" Telescope: fuzzy search: \ff \fg \fb
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' } "
@@ -82,7 +81,6 @@ set keymodel=startsel
 let g:airline#extensions#tabline#enabled = 0 " don't use airline tabs
 let g:airline_powerline_fonts = 1
 set guifont=mononoki-Regular\ Nerd\ Font\ Complete\ Mono\ 11
-let g:indent_guides_enable_on_vim_startup = 1
 
 " Colorscheme Config
 set termguicolors
