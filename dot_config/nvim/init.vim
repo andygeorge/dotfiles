@@ -13,6 +13,7 @@ Plug 'mhinz/vim-startify' " fancy start screen
 Plug 'nvim-zh/colorful-winsep.nvim' " fancy window seperators
 Plug 'gen740/SmoothCursor.nvim' " fancy cursor
 Plug 'machakann/vim-highlightedyank' " highlight yanked text
+Plug 'LudoPinelli/comment-box.nvim' " fancy comments
 
 "" Telescope: fuzzy search: \ff \fg \fb
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' } "
