@@ -27,6 +27,7 @@ Plug 'rcarriga/nvim-notify'
 "" Syntax coloring
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'hashivim/vim-terraform'
+Plug 'm-demare/hlargs.nvim' " Fancy argument coloring
 
 "" Colorschemes etc
 Plug 'rafi/awesome-vim-colorschemes'
@@ -78,9 +79,10 @@ set nu
 set list
 set listchars=tab:▸\ ,trail:·,nbsp:_
 set keymodel=startsel
+set guifont=mononoki-Regular\ Nerd\ Font\ Complete\ Mono\ 11
+
 let g:airline#extensions#tabline#enabled = 0 " don't use airline tabs
 let g:airline_powerline_fonts = 1
-set guifont=mononoki-Regular\ Nerd\ Font\ Complete\ Mono\ 11
 
 " Colorscheme Config
 set termguicolors
@@ -121,5 +123,6 @@ require('smoothcursor').setup({
 		enable = true,
 	},
 })
+require('hlargs').setup()
 EOF
 
