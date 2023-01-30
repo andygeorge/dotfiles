@@ -35,11 +35,6 @@ Plug 'rafi/awesome-vim-colorschemes'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
 
-"" Used?
-"Plug 'kana/vim-textobj-user'
-"Plug 'tpope/vim-surround'
-"Plug 'tpope/vim-sensible'
-
 "" Plugin Graveyard
 "Plug 'ayu-theme/ayu-vim'
 "Plug 'flazz/vim-colorschemes'
