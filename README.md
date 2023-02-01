@@ -2,6 +2,9 @@
 
 ```sh
 sh -c "$(curl -fsLS get.chezmoi.io)" -- -b ~/.local/bin init --apply andygeorge && ln -s ~/.local/bin/chezmoi ~/.local/bin/cm
+```
+
+```sh
 sudo rm -rf /usr/bin/vi && sudo ln -s /usr/bin/nvim /usr/bin/vi
 ```
 
