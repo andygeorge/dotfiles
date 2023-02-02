@@ -116,9 +116,7 @@ require("colorful-winsep").setup({
   end,
 })
 require('smoothcursor').setup({
-	fancy = {
-		enable = true,
-	},
+	fancy = { enable = true }
 })
 require('hlargs').setup()
 EOF
