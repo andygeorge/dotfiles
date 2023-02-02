@@ -2,7 +2,11 @@
 #assume_yes = true
 
 # Disable specific steps - same options as the command line flag
-#disable = ["system", "emacs"]
+disable = [
+	"atom",
+	"containers",
+	"firmware",
+]
 
 # Ignore failures for these steps
 #ignore_failures = ["powershell"]
@@ -36,10 +40,10 @@
 #set_title = false
 
 # Display the time in step titles
-# display_time = true
+display_time = true
 
 # Cleanup temporary or old files
-#cleanup = true
+cleanup = true
 
 # Skip sending a notification at the end of a run
 skip_notify = true
