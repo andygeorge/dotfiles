@@ -97,6 +97,7 @@ require('nvim-biscuits').setup({
 })
 require'nvim-treesitter.configs'.setup {
 	ensure_installed = "all",
+	highlight = { enable = true },
 }
 require("noice").setup()
 require('Comment').setup()
