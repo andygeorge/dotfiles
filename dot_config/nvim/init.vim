@@ -120,6 +120,6 @@ require('smoothcursor').setup({
 	fancy = { enable = true }
 })
 require('hlargs').setup()
-require("autoclose").setup({})
+require("autoclose").setup()
 EOF
 
