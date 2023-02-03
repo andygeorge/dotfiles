@@ -17,6 +17,7 @@ Plug 'LudoPinelli/comment-box.nvim' " fancy comments
 Plug 'itchyny/vim-cursorword' " underline word under cursor
 Plug 'm4xshen/autoclose.nvim' " autoclose brackets etc
 Plug 'ntpeters/vim-better-whitespace' " highlight whitespace
+Plug 'nathanaelkane/vim-indent-guides' " fancy identation
 
 "" Telescope: fuzzy search: \ff \fg \fb
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' } "
@@ -43,6 +44,7 @@ Plug 'ryanoasis/vim-devicons'
 "Plug 'sainnhe/everforest'
 "Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap' }
 "Plug 'vim-airline/vim-airline-themes'
+"Plug 'https://github.com/Darazaki/indent-o-matic' " indent detection
 
 call plug#end()
 
@@ -75,7 +77,6 @@ set nowrap
 set number
 set nu
 set list
-set listchars=tab:▸\ ,trail:·,nbsp:_
 set keymodel=startsel
 set guifont=mononoki-Regular\ Nerd\ Font\ Complete\ Mono\ 11
 
@@ -87,10 +88,18 @@ set termguicolors
 colorscheme focuspoint
 highlight Comment cterm=italic gui=italic guifg=#777777
 
+" Indentation Config
+set listchars=tab:\ \ ,trail:·,nbsp:_
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#1B1D1E
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#1B1D1E
+
 " Config Graveyard
 "colorscheme blazer " from 'flazz/vim-colorschemes'
 "colorscheme ayu " from 'ayu-theme/ayu-vim'
 "colorscheme jellybeans " from 'rafi/awesome-vim-colorschemes'
+"set listchars=tab:▸\ ,trail:·,nbsp:_
 
 " Lua Config
 lua << EOF
