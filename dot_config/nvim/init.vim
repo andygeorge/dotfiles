@@ -16,8 +16,6 @@ Plug 'machakann/vim-highlightedyank' " highlight yanked text
 Plug 'LudoPinelli/comment-box.nvim' " fancy comments
 Plug 'itchyny/vim-cursorword' " underline word under cursor
 Plug 'm4xshen/autoclose.nvim' " autoclose brackets etc
-Plug 'ntpeters/vim-better-whitespace' " highlight whitespace
-Plug 'nathanaelkane/vim-indent-guides' " fancy identation
 
 "" Telescope: fuzzy search: \ff \fg \fb
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' } "
@@ -37,6 +35,8 @@ Plug 'm-demare/hlargs.nvim' " Fancy argument coloring
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
+Plug 'ntpeters/vim-better-whitespace' " highlight whitespace
+Plug 'nathanaelkane/vim-indent-guides' " fancy identation
 
 "" Plugin Graveyard
 "Plug 'ayu-theme/ayu-vim'
@@ -44,7 +44,7 @@ Plug 'ryanoasis/vim-devicons'
 "Plug 'sainnhe/everforest'
 "Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap' }
 "Plug 'vim-airline/vim-airline-themes'
-"Plug 'https://github.com/Darazaki/indent-o-matic' " indent detection
+"Plug 'Darazaki/indent-o-matic' " indent detection
 
 call plug#end()
 
@@ -131,5 +131,6 @@ require('smoothcursor').setup({
 })
 require('hlargs').setup()
 require("autoclose").setup()
+-- require("virt-column").setup()
 EOF
 
