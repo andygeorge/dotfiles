@@ -16,6 +16,7 @@ Plug 'machakann/vim-highlightedyank' " highlight yanked text
 Plug 'LudoPinelli/comment-box.nvim' " fancy comments
 Plug 'itchyny/vim-cursorword' " underline word under cursor
 Plug 'm4xshen/autoclose.nvim' " autoclose brackets etc
+Plug 'edluffy/specs.nvim' " fancy 'show cursor'
 
 "" Telescope: fuzzy search: \ff \fg \fb
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' } "
