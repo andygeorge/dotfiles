@@ -69,11 +69,7 @@ function fish_prompt --description 'Write out the prompt'
             set suffix '$'
     end
 
-    # PWD
-    set_color $color_cwd
-    echo -n (prompt_pwd)
-    set_color normal
-
+    echo -n "$USER@$hostname"
 
     printf '%s ' (fish_vcs_prompt)
 
@@ -81,6 +77,11 @@ function fish_prompt --description 'Write out the prompt'
     echo -n $pipestatus_string
     set_color normal
 
-    echo -n "($hostname) "
-    echo -n "$suffix "
+    # PWD
+    set_color $color_cwd
+    echo -n (prompt_pwd)
+    set_color normal
+		
+    echo -n " $suffix "
 end
+
