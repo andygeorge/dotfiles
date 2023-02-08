@@ -69,7 +69,10 @@ function fish_prompt --description 'Write out the prompt'
             set suffix '$'
     end
 
-    echo -n "$USER@$hostname"
+    echo -n "$USER@"
+		set_color --bold bryellow
+		echo -n "$hostname"
+		set_color normal
 
     printf '%s ' (fish_vcs_prompt)
 
