@@ -31,6 +31,7 @@ Plug 'rcarriga/nvim-notify'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'hashivim/vim-terraform'
 Plug 'm-demare/hlargs.nvim' " Fancy argument coloring
+Plug 'HiPhish/nvim-ts-rainbow2' " fancy rainbow parens etc
 
 "" Colorschemes etc
 Plug 'rafi/awesome-vim-colorschemes'
@@ -110,6 +111,9 @@ require('nvim-biscuits').setup({
 require'nvim-treesitter.configs'.setup {
 	ensure_installed = "all",
 	highlight = { enable = true },
+	rainbow = {
+		enable = true,
+	}
 }
 require("noice").setup()
 require('Comment').setup()
