@@ -72,7 +72,7 @@ noremap <C-s> :w<cr>
 
 " Config
 set mouse=a
-set guicursor=
+set guicursor=v-c-sm:block-blinkwait700-blinkon400-blinkoff250,n-i-ci-ve:ver25-blinkwait700-blinkon400-blinkoff250,r-cr-o:hor20-blinkwait700-blinkon400-blinkoff250
 set tabstop=2 shiftwidth=2 softtabstop=2
 set autoindent
 set nowrap
@@ -84,6 +84,11 @@ set guifont=mononoki-Regular\ Nerd\ Font\ Complete\ Mono\ 11
 
 let g:airline#extensions#tabline#enabled = 0 " don't use airline tabs
 let g:airline_powerline_fonts = 1
+
+augroup RestoreCursorShapeOnExit
+	autocmd!
+	autocmd VimLeave * set guicursor=a:ver20-blinkwait700-blinkon400-blinkoff250
+augroup END
 
 " Colorscheme Config
 set termguicolors
