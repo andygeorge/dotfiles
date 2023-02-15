@@ -29,6 +29,12 @@ cm managed
 cm cd
 ```
 
+## Nerd Fonts
+
+```
+https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Mononoki/Regular
+```
+
 ----
 Managed using [`chezmoi`](https://www.chezmoi.io).
 
