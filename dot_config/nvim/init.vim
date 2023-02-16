@@ -85,6 +85,10 @@ set guifont=mononoki-Regular\ Nerd\ Font\ Complete\ Mono\ 11
 let g:airline#extensions#tabline#enabled = 0 " don't use airline tabs
 let g:airline_powerline_fonts = 1
 
+augroup ShowNerdTreeOnStart
+	autocmd VimEnter * NERDTree | wincmd p
+augroup END
+
 augroup RestoreCursorShapeOnExit
 	autocmd!
 	autocmd VimLeave * set guicursor=a:ver20-blinkwait700-blinkon400-blinkoff250
