@@ -30,6 +30,7 @@ Plug 'rcarriga/nvim-notify'
 "" Syntax coloring
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'hashivim/vim-terraform'
+Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'm-demare/hlargs.nvim' " Fancy argument coloring
 Plug 'HiPhish/nvim-ts-rainbow2' " fancy rainbow parens etc
 
@@ -54,6 +55,7 @@ call plug#end()
 nnoremap <leader>vv :source $MYVIMRC<cr>
 nnoremap <leader>cc :!chezmoi apply<cr>
 nnoremap <leader>w :NERDTreeFocus<cr>
+nnoremap <leader>q :NERDTreeFind<cr>
 nnoremap <leader>pp :PlugUpdate<cr>
 nnoremap <leader>po :PlugClean!<cr>
 nnoremap <leader>ff :Telescope find_files<cr>
