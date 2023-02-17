@@ -1,0 +1,27 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.fontSize": 11,
+    "redhat.telemetry.enabled": false,
+    "ansible.validation.lint.enabled": false,
+    "git.confirmSync": false,
+    "editor.insertSpaces": false,
+    "files.insertFinalNewline": true,
+    "update.mode": "none",
+    "update.showReleaseNotes": false,
+    "git.enableSmartCommit": true,
+    "go.buildOnSave": "off",
+    "editor.minimap.enabled": false,
+    "go.goroot": "/usr/local/go",
+    "go.gopath": "/home/andygeorge/go",
+    "go.lintOnSave": "off",
+    "go.enableCodeLens": {
+        "runtest": false
+    },
+    "go.vetOnSave": "off",
+    "go.useLanguageServer": false,
+    "markdown-preview-enhanced.previewTheme": "monokai.css",
+    "markdown-preview-enhanced.mermaidTheme": "dark",
+    "workbench.startupEditor": "none",
+    "workbench.iconTheme": "Monokai Pro (Filter Machine) Icons",
+    "workbench.colorTheme": "Monokai Pro (Filter Machine)",
+}
