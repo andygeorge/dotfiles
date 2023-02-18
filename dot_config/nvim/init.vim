@@ -17,6 +17,7 @@ Plug 'LudoPinelli/comment-box.nvim' " fancy comments
 Plug 'itchyny/vim-cursorword' " underline word under cursor
 Plug 'm4xshen/autoclose.nvim' " autoclose brackets etc
 Plug 'edluffy/specs.nvim' " fancy 'show cursor'
+Plug 'max397574/better-escape.nvim' " faster escape: jj / jk
 
 "" Telescope: fuzzy search: \ff \fg \fb
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' } "
@@ -116,16 +117,24 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#1B1D1E
 
 " Lua Config
 lua << EOF
+-- use defaults
+require('hlargs').setup()
+require("autoclose").setup()
+require("better_escape").setup()
+require("noice").setup()
+require('Comment').setup()
+
+-- customized configs
 require('nvim-biscuits').setup({
 	toggle_keybind = "<leader>b",
 })
+
 require'nvim-treesitter.configs'.setup {
 	ensure_installed = "all",
 	highlight = { enable = true },
 	rainbow = { enable = true },
 }
-require("noice").setup()
-require('Comment').setup()
+
 require("colorful-winsep").setup({
 	-- default config: https://github.com/nvim-zh/colorful-winsep.nvim#default-configuration
   highlight = {
@@ -140,11 +149,12 @@ require("colorful-winsep").setup({
   create_event = function()
   end,
 })
+
 require('smoothcursor').setup({
 	fancy = { enable = true }
 })
-require('hlargs').setup()
-require("autoclose").setup()
+
+-- Lua Graveyard
 -- require("virt-column").setup()
 EOF
 
