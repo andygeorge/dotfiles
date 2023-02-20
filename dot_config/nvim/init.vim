@@ -18,6 +18,7 @@ Plug 'itchyny/vim-cursorword' " underline word under cursor
 Plug 'm4xshen/autoclose.nvim' " autoclose brackets etc
 Plug 'edluffy/specs.nvim' " fancy 'show cursor'
 Plug 'max397574/better-escape.nvim' " faster escape: jj / jk
+Plug 'dstein64/vim-startuptime' " startup time profiling: :StartupTime
 
 "" Telescope: fuzzy search: \ff \fg \fb
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' } "
