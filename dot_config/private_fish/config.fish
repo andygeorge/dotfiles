@@ -10,6 +10,10 @@ set -x PATH $PATH /home/andygeorge/go/bin
 set -x PATH $PATH /home/andygeorge/bin
 set -x PATH $PATH /home/andygeorge/.cargo/bin
 set -x PATH $PATH /home/andygeorge/.pulumi/bin
+set -x PATH $PATH ~/go/bin
+set -x PATH $PATH ~/bin
+set -x PATH $PATH ~/.cargo/bin
+set -x PATH $PATH ~/.pulumi/bin
 
 # golang setup
 set -x PATH $PATH /usr/local/go/bin
