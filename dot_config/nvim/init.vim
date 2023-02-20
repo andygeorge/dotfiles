@@ -126,6 +126,7 @@ require("autoclose").setup()
 require("better_escape").setup()
 require("noice").setup()
 require('Comment').setup()
+require('scrollview').setup()
 
 -- customized configs
 require('nvim-biscuits').setup({
