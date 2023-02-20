@@ -11,7 +11,6 @@ Plug 'numToStr/Comment.nvim' " easy comments: gcc gbc
 Plug 'mhinz/vim-signify' " git changes sidebar
 Plug 'mhinz/vim-startify' " fancy start screen
 Plug 'nvim-zh/colorful-winsep.nvim' " fancy window seperators
-Plug 'gen740/SmoothCursor.nvim' " fancy cursor
 Plug 'machakann/vim-highlightedyank' " highlight yanked text
 Plug 'LudoPinelli/comment-box.nvim' " fancy comments
 Plug 'itchyny/vim-cursorword' " underline word under cursor
@@ -19,6 +18,7 @@ Plug 'm4xshen/autoclose.nvim' " autoclose brackets etc
 Plug 'edluffy/specs.nvim' " fancy 'show cursor'
 Plug 'max397574/better-escape.nvim' " faster escape: jj / jk
 Plug 'dstein64/vim-startuptime' " startup time profiling: :StartupTime
+Plug 'jeffkreeftmeijer/vim-numbertoggle' " fancy number bar
 
 "" Telescope: fuzzy search: \ff \fg \fb
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' } "
@@ -50,6 +50,7 @@ Plug 'nathanaelkane/vim-indent-guides' " fancy identation
 "Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap' }
 "Plug 'vim-airline/vim-airline-themes'
 "Plug 'Darazaki/indent-o-matic' " indent detection
+"Plug 'gen740/SmoothCursor.nvim' " fancy cursor
 
 call plug#end()
 
@@ -151,11 +152,10 @@ require("colorful-winsep").setup({
   end,
 })
 
-require('smoothcursor').setup({
-	fancy = { enable = true }
-})
-
 -- Lua Graveyard
 -- require("virt-column").setup()
+-- require('smoothcursor').setup({
+-- 	fancy = { enable = true }
+-- })
 EOF
 
