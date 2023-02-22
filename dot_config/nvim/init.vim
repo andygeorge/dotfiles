@@ -18,7 +18,6 @@ Plug 'm4xshen/autoclose.nvim' " autoclose brackets etc
 Plug 'edluffy/specs.nvim' " fancy 'show cursor'
 Plug 'max397574/better-escape.nvim' " faster escape: jj / jk
 Plug 'dstein64/vim-startuptime' " startup time profiling: :StartupTime
-Plug 'jeffkreeftmeijer/vim-numbertoggle' " fancy number bar
 Plug 'dstein64/nvim-scrollview' " scroll bar
 Plug 'wellle/context.vim' " fancy code context display
 
@@ -53,6 +52,7 @@ Plug 'nathanaelkane/vim-indent-guides' " fancy identation
 "Plug 'vim-airline/vim-airline-themes'
 "Plug 'Darazaki/indent-o-matic' " indent detection
 "Plug 'gen740/SmoothCursor.nvim' " fancy cursor
+"Plug 'jeffkreeftmeijer/vim-numbertoggle' " fancy number bar
 
 call plug#end()
 
