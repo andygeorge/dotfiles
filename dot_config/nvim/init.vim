@@ -20,6 +20,7 @@ Plug 'max397574/better-escape.nvim' " faster escape: jj / jk
 Plug 'dstein64/vim-startuptime' " startup time profiling: :StartupTime
 Plug 'dstein64/nvim-scrollview' " scroll bar
 Plug 'wellle/context.vim' " fancy code context display
+Plug 'fedepujol/move.nvim' " fancy line/block movement (MoveLine/MoveBlock)
 
 "" Telescope: fuzzy search: \ff \fg \fb
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' } "
@@ -69,6 +70,8 @@ nnoremap <leader>fb :Telescope buffers<cr>
 nnoremap <leader>fh :Telescope help_tags<cr>
 nnoremap <C-Down> :bnext<cr>
 nnoremap <C-Up> :bprevious<cr>
+vnoremap <C-Down> :MoveBlock(1)<cr>
+vnoremap <C-Up> :MoveBlock(-1)<cr>
 
 "" I can't quit you
 noremap <C-a> ggVG
