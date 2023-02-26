@@ -21,6 +21,7 @@ Plug 'dstein64/vim-startuptime' " startup time profiling: :StartupTime
 Plug 'dstein64/nvim-scrollview' " scroll bar
 Plug 'wellle/context.vim' " fancy code context display
 Plug 'fedepujol/move.nvim' " fancy line/block movement (MoveLine/MoveBlock)
+Plug 'levouh/tint.nvim' " fancy tint on inactive windows
 
 "" Telescope: fuzzy search: \ff \fg \fb
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' } "
@@ -131,6 +132,7 @@ require("better_escape").setup()
 require("noice").setup()
 require('Comment').setup()
 require('scrollview').setup()
+require('tint').setup()
 
 -- customized configs
 require('nvim-biscuits').setup({
