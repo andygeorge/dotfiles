@@ -21,7 +21,6 @@ Plug 'dstein64/vim-startuptime' " startup time profiling: :StartupTime
 Plug 'dstein64/nvim-scrollview' " scroll bar
 Plug 'wellle/context.vim' " fancy code context display
 Plug 'fedepujol/move.nvim' " fancy line/block movement (MoveLine/MoveBlock)
-Plug 'levouh/tint.nvim' " fancy tint on inactive windows
 
 "" Telescope: fuzzy search: \ff \fg \fb
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' } "
@@ -45,6 +44,7 @@ Plug 'nvim-tree/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
 Plug 'ntpeters/vim-better-whitespace' " highlight whitespace
 Plug 'nathanaelkane/vim-indent-guides' " fancy identation
+Plug 'levouh/tint.nvim' " fancy tint on inactive windows
 
 "" Plugin Graveyard
 "Plug 'ayu-theme/ayu-vim'
