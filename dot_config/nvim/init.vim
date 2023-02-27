@@ -137,6 +137,8 @@ require('tint').setup()
 -- customized configs
 require('nvim-biscuits').setup({
 	toggle_keybind = "<leader>b",
+	cursor_line_inline = true,
+	show_on_start = false,
 })
 
 require'nvim-treesitter.configs'.setup {
