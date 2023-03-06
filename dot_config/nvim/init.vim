@@ -22,6 +22,7 @@ Plug 'dstein64/nvim-scrollview' " scroll bar
 Plug 'wellle/context.vim' " fancy code context display
 Plug 'fedepujol/move.nvim' " fancy line/block movement (MoveLine/MoveBlock)
 Plug 'koenverburg/peepsight.nvim' " focus on a single function
+Plug 'gorbit99/codewindow.nvim' " fancy code minimap: \mm
 
 "" Telescope: fuzzy search: \ff \fg \fb
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' } "
@@ -101,13 +102,13 @@ augroup ShowNerdTreeOnStart
 	autocmd VimEnter * NERDTree | wincmd p
 augroup END
 
+augroup EnablePeepsightOnStart
+	autocmd VimEnter * :PeepsightEnable
+augroup END
+
 augroup RestoreCursorShapeOnExit
 	autocmd!
 	autocmd VimLeave * set guicursor=a:ver20-blinkwait700-blinkon400-blinkoff250
-augroup END
-
-augroup EnablePeepsightOnStart
-	autocmd VimEnter * :PeepsightEnable
 augroup END
 
 " Colorscheme Config
@@ -139,6 +140,9 @@ require('Comment').setup()
 require('scrollview').setup()
 require('tint').setup()
 require('peepsight').setup()
+require('codewindow').setup()
+require('codewindow').apply_default_keybinds()
+require('codewindow').open_minimap()
 
 -- customized configs
 require('nvim-biscuits').setup({
