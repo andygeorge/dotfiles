@@ -140,9 +140,6 @@ require('Comment').setup()
 require('scrollview').setup()
 require('tint').setup()
 require('peepsight').setup()
-require('codewindow').setup()
-require('codewindow').apply_default_keybinds()
-require('codewindow').open_minimap()
 
 -- customized configs
 require('nvim-biscuits').setup({
@@ -171,6 +168,14 @@ require("colorful-winsep").setup({
   create_event = function()
   end,
 })
+
+require('codewindow').setup({
+  exclude_filetypes = {
+		'nerdtree',
+	},
+})
+require('codewindow').apply_default_keybinds()
+require('codewindow').open_minimap()
 
 -- Lua Graveyard
 -- require("virt-column").setup()
