@@ -5,7 +5,6 @@ call plug#begin()
 
 Plug 'vim-airline/vim-airline' " fancy status bar
 Plug 'preservim/nerdtree' " file system explorer
-Plug 'code-biscuits/nvim-biscuits' " fancy end of blocks: \b
 Plug 'romgrk/barbar.nvim' " fancy tabline
 Plug 'numToStr/Comment.nvim' " easy comments: gcc gbc
 Plug 'mhinz/vim-signify' " git changes sidebar
@@ -23,6 +22,7 @@ Plug 'wellle/context.vim' " fancy code context display
 Plug 'fedepujol/move.nvim' " fancy line/block movement (MoveLine/MoveBlock)
 Plug 'koenverburg/peepsight.nvim' " focus on a single function
 Plug 'gorbit99/codewindow.nvim' " fancy code minimap: \mm
+Plug 'matbme/JABS.nvim' " fancy buffer switcher
 
 "" Telescope: fuzzy search: \ff \fg \fb
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' } "
@@ -57,6 +57,7 @@ Plug 'levouh/tint.nvim' " fancy tint on inactive windows
 "Plug 'Darazaki/indent-o-matic' " indent detection
 "Plug 'gen740/SmoothCursor.nvim' " fancy cursor
 "Plug 'jeffkreeftmeijer/vim-numbertoggle' " fancy number bar
+"Plug 'code-biscuits/nvim-biscuits' " fancy end of blocks: \b
 
 call plug#end()
 
@@ -71,6 +72,7 @@ nnoremap <leader>ff :Telescope find_files<cr>
 nnoremap <leader>fg :Telescope live_grep<cr>
 nnoremap <leader>fb :Telescope buffers<cr>
 nnoremap <leader>fh :Telescope help_tags<cr>
+nnoremap <leader>b :JABSOpen<cr>
 nnoremap <C-Down> :bnext<cr>
 nnoremap <C-Up> :bprevious<cr>
 vnoremap <C-Down> :MoveBlock(1)<cr>
@@ -140,13 +142,10 @@ require('Comment').setup()
 require('scrollview').setup()
 require('tint').setup()
 require('peepsight').setup()
+require('jabs').setup()
 
 -- customized configs
-require('nvim-biscuits').setup({
-	toggle_keybind = "<leader>b",
-	cursor_line_inline = true,
-	show_on_start = false,
-})
+
 
 require'nvim-treesitter.configs'.setup {
 	ensure_installed = "all",
@@ -181,6 +180,11 @@ require('codewindow').open_minimap()
 -- require("virt-column").setup()
 -- require('smoothcursor').setup({
 -- 	fancy = { enable = true }
+-- })
+-- require('nvim-biscuits').setup({
+-- 	toggle_keybind = "<leader>b",
+-- 	cursor_line_inline = true,
+-- 	show_on_start = false,
 -- })
 EOF
 
