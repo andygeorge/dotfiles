@@ -6,6 +6,7 @@ disable = [
 	"atom",
 	"containers",
 	"firmware",
+	"snap",
 ]
 
 # Ignore failures for these steps
