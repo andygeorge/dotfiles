@@ -14,6 +14,7 @@ set -x PATH $PATH ~/go/bin
 set -x PATH $PATH ~/bin
 set -x PATH $PATH ~/.cargo/bin
 set -x PATH $PATH ~/.pulumi/bin
+set -x PATH $PATH ~/Sync/_dev/bin/
 
 # golang setup
 set -x PATH $PATH /usr/local/go/bin
