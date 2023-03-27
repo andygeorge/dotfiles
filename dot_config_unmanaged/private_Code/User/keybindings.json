@@ -8,7 +8,6 @@
     {
         "key": "ctrl+shift+\\",
         "command": "workbench.view.explorer",
-        "when": "viewContainer.workbench.view.explorer.enabled"
     },
     {
         "key": "ctrl+shift+e",
@@ -16,14 +15,12 @@
         "when": "viewContainer.workbench.view.explorer.enabled"
     },
     {
-        "key": "ctrl+shift+9",
+        "key": "ctrl+shift+\/",
         "command": "workbench.view.scm",
-        "when": "workbench.scm.active"
     },
     {
         "key": "ctrl+shift+g",
         "command": "-workbench.view.scm",
-        "when": "workbench.scm.active"
     },
     {
         "key": "ctrl+shift+tab",
@@ -83,7 +80,7 @@
     },
     {
         "key": "ctrl+shift+f",
-        "command": "search.action.openNewEditor"
-    }
+        "command": "search.action.openEditor"
+    }
 ]
 
