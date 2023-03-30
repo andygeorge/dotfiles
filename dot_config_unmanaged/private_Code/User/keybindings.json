@@ -2,7 +2,7 @@
 [
     {
         "key": "ctrl+shift+\\",
-        "command": "-editor.action.jumpToBracket",
+        "command": "-editor.action.jumNewpToBracket",
         "when": "editorTextFocus"
     },
     {
@@ -65,6 +65,10 @@
         "command": "-workbench.action.quickOpen"
     },
     {
+        "key": "ctrl+shift+w",
+        "command": "-workbench.action.closeWindow"
+    },
+    {
         "key": "ctrl+shift+f",
         "command": "-workbench.action.findInFiles"
     },
@@ -80,7 +84,7 @@
     },
     {
         "key": "ctrl+shift+f",
-        "command": "search.action.openEditor"
-    }
+        "command": "search.action.openNewEditor"
+    }
 ]
 
