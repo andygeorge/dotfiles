@@ -69,6 +69,10 @@
         "command": "-workbench.action.closeWindow"
     },
     {
+        "key": "ctrl+q",
+        "command": "-workbench.action.quit"
+    },
+    {
         "key": "ctrl+shift+f",
         "command": "-workbench.action.findInFiles"
     },
