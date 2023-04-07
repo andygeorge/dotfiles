@@ -145,8 +145,6 @@ require('peepsight').setup()
 require('jabs').setup()
 
 -- customized configs
-
-
 require'nvim-treesitter.configs'.setup {
 	ensure_installed = "all",
 	highlight = { enable = true },
