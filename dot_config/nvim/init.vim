@@ -146,7 +146,7 @@ require('jabs').setup()
 
 -- customized configs
 require'nvim-treesitter.configs'.setup {
-	ensure_installed = "all",
+	ensure_installed = {"rust", "vim", "go", "yaml", "lua"},
 	highlight = { enable = true },
 	rainbow = { enable = true },
 }
