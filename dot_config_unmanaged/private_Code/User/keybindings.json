@@ -16,7 +16,7 @@
     },
     {
         "key": "ctrl+shift+\/",
-        "command": "workbench.view.scm",
+        "command": "gitlens.views.repositories.focus",
     },
     {
         "key": "ctrl+shift+g",
