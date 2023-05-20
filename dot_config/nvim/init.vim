@@ -47,6 +47,7 @@ Plug 'ntpeters/vim-better-whitespace' " highlight whitespace
 Plug 'nathanaelkane/vim-indent-guides' " fancy identation
 Plug 'levouh/tint.nvim' " fancy tint on inactive windows
 Plug 'phanviet/vim-monokai-pro'
+Plug 'AlexvZyl/nordic.nvim'
 
 "" Plugin Graveyard
 "Plug 'ayu-theme/ayu-vim'
@@ -116,8 +117,8 @@ augroup END
 
 " Colorscheme Config
 set termguicolors
-" colorscheme focuspoint
-colorscheme monokai_pro
+
+colorscheme nordic " from 'AlexvZyl/nordic.nvim'
 highlight Comment cterm=italic gui=italic guifg=#777777
 
 " Indentation Config
@@ -132,6 +133,8 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#1B1D1E
 "colorscheme ayu " from 'ayu-theme/ayu-vim'
 "colorscheme jellybeans " from 'rafi/awesome-vim-colorschemes'
 "set listchars=tab:▸\ ,trail:·,nbsp:_
+"colorscheme focuspoint " from 'rafi/awesome-vim-colorschemes'
+"colorscheme monokai_pro " from 'phanviet/vim-monokai-pro'
 
 " Lua Config
 lua << EOF
