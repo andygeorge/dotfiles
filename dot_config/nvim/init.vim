@@ -41,12 +41,12 @@ Plug 'm-demare/hlargs.nvim' " Fancy argument coloring
 Plug 'HiPhish/nvim-ts-rainbow2' " fancy rainbow parens etc
 
 "" Colorschemes etc
-Plug 'rafi/awesome-vim-colorschemes'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
 Plug 'ntpeters/vim-better-whitespace' " highlight whitespace
 Plug 'nathanaelkane/vim-indent-guides' " fancy identation
 Plug 'levouh/tint.nvim' " fancy tint on inactive windows
+Plug 'phanviet/vim-monokai-pro'
 
 "" Plugin Graveyard
 "Plug 'ayu-theme/ayu-vim'
@@ -58,6 +58,7 @@ Plug 'levouh/tint.nvim' " fancy tint on inactive windows
 "Plug 'gen740/SmoothCursor.nvim' " fancy cursor
 "Plug 'jeffkreeftmeijer/vim-numbertoggle' " fancy number bar
 "Plug 'code-biscuits/nvim-biscuits' " fancy end of blocks: \b
+"Plug 'rafi/awesome-vim-colorschemes'
 
 call plug#end()
 
@@ -115,7 +116,8 @@ augroup END
 
 " Colorscheme Config
 set termguicolors
-colorscheme focuspoint
+" colorscheme focuspoint
+colorscheme monokai_pro
 highlight Comment cterm=italic gui=italic guifg=#777777
 
 " Indentation Config
