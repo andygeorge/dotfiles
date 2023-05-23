@@ -45,21 +45,21 @@ Plug 'nvim-tree/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
 Plug 'ntpeters/vim-better-whitespace' " highlight whitespace
 Plug 'nathanaelkane/vim-indent-guides' " fancy identation
-Plug 'levouh/tint.nvim' " fancy tint on inactive windows
 Plug 'phanviet/vim-monokai-pro'
 Plug 'AlexvZyl/nordic.nvim'
 
 "" Plugin Graveyard
-"Plug 'ayu-theme/ayu-vim'
-"Plug 'flazz/vim-colorschemes'
-"Plug 'sainnhe/everforest'
-"Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap' }
-"Plug 'vim-airline/vim-airline-themes'
-"Plug 'Darazaki/indent-o-matic' " indent detection
-"Plug 'gen740/SmoothCursor.nvim' " fancy cursor
-"Plug 'jeffkreeftmeijer/vim-numbertoggle' " fancy number bar
-"Plug 'code-biscuits/nvim-biscuits' " fancy end of blocks: \b
-"Plug 'rafi/awesome-vim-colorschemes'
+" Plug 'ayu-theme/ayu-vim'
+" Plug 'flazz/vim-colorschemes'
+" Plug 'sainnhe/everforest'
+" Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap' }
+" Plug 'vim-airline/vim-airline-themes'
+" Plug 'Darazaki/indent-o-matic' " indent detection
+" Plug 'gen740/SmoothCursor.nvim' " fancy cursor
+" Plug 'jeffkreeftmeijer/vim-numbertoggle' " fancy number bar
+" Plug 'code-biscuits/nvim-biscuits' " fancy end of blocks: \b
+" Plug 'rafi/awesome-vim-colorschemes'
+" Plug 'levouh/tint.nvim' " fancy tint on inactive windows
 
 call plug#end()
 
@@ -145,7 +145,6 @@ require("better_escape").setup()
 require("noice").setup()
 require('Comment').setup()
 require('scrollview').setup()
-require('tint').setup()
 require('peepsight').setup()
 require('jabs').setup()
 
@@ -189,5 +188,6 @@ require('codewindow').open_minimap()
 -- 	cursor_line_inline = true,
 -- 	show_on_start = false,
 -- })
+-- require('tint').setup()
 EOF
 
