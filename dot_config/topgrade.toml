@@ -9,6 +9,7 @@ disable = [
 	"snap",
 	"toolbx",
 	"vim",
+	"brew",
 ]
 
 # Ignore failures for these steps
