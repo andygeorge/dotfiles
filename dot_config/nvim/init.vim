@@ -176,9 +176,10 @@ require('codewindow').setup({
 	},
 })
 require('codewindow').apply_default_keybinds()
-require('codewindow').open_minimap()
+require('codewindow').close_minimap()
 
 -- Lua Graveyard
+-- require('codewindow').open_minimap()
 -- require("virt-column").setup()
 -- require('smoothcursor').setup({
 -- 	fancy = { enable = true }
