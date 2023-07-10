@@ -12,7 +12,8 @@ Plug 'mhinz/vim-startify' " fancy start screen
 Plug 'nvim-zh/colorful-winsep.nvim' " fancy window seperators
 Plug 'machakann/vim-highlightedyank' " highlight yanked text
 Plug 'LudoPinelli/comment-box.nvim' " fancy comments
-Plug 'itchyny/vim-cursorword' " underline word under cursor
+" Plug 'itchyny/vim-cursorword' " underline word under cursor
+Plug 'xiyaowong/nvim-cursorword' " underline word under cursor
 Plug 'm4xshen/autoclose.nvim' " autoclose brackets etc
 Plug 'edluffy/specs.nvim' " fancy 'show cursor'
 Plug 'max397574/better-escape.nvim' " faster escape: jj / jk
