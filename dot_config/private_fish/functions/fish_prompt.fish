@@ -90,6 +90,6 @@ function fish_prompt --description 'Write out the prompt'
     set_color normal
 		
     # echo -en "\n\e[3mfish\e[0m $suffix "
-    echo -en "\n $suffix "
+    echo -en "\n$suffix "
 end
 
