@@ -4,7 +4,6 @@
 call plug#begin()
 
 Plug 'vim-airline/vim-airline' " fancy status bar
-Plug 'preservim/nerdtree' " file system explorer
 Plug 'romgrk/barbar.nvim' " fancy tabline
 Plug 'numToStr/Comment.nvim' " easy comments: gcc gbc
 Plug 'mhinz/vim-signify' " git changes sidebar
@@ -48,6 +47,10 @@ Plug 'nathanaelkane/vim-indent-guides' " fancy identation
 Plug 'phanviet/vim-monokai-pro'
 Plug 'AlexvZyl/nordic.nvim'
 
+"" NvimTree \t \w \q
+Plug 'nvim-tree/nvim-tree.lua'
+Plug 'nvim-tree/nvim-web-devicons'
+
 "" Plugin Graveyard
 " Plug 'ayu-theme/ayu-vim'
 " Plug 'flazz/vim-colorschemes'
@@ -60,14 +63,16 @@ Plug 'AlexvZyl/nordic.nvim'
 " Plug 'code-biscuits/nvim-biscuits' " fancy end of blocks: \b
 " Plug 'rafi/awesome-vim-colorschemes'
 " Plug 'levouh/tint.nvim' " fancy tint on inactive windows
+" Plug 'preservim/nerdtree' " file system explorer
 
 call plug#end()
 
 " Shortcuts
 nnoremap <leader>vv :source $MYVIMRC<cr>
 nnoremap <leader>cc :!chezmoi apply<cr>
-nnoremap <leader>w :NERDTreeFocus<cr>
-nnoremap <leader>q :NERDTreeFind<cr>
+nnoremap <leader>w :NvimTreeFocus<cr>
+nnoremap <leader>t :NvimTreeToggle<cr>
+nnoremap <leader>q :NvimTreeFindFile<cr>
 nnoremap <leader>pp :PlugUpdate<cr>
 nnoremap <leader>po :PlugClean!<cr>
 nnoremap <leader>ff :Telescope find_files<cr>
@@ -102,9 +107,9 @@ set guifont=mononoki-Regular\ Nerd\ Font\ Complete\ Mono\ 11
 let g:airline#extensions#tabline#enabled = 0 " don't use airline tabs
 let g:airline_powerline_fonts = 1
 
-augroup ShowNerdTreeOnStart
-	autocmd VimEnter * NERDTree | wincmd p
-augroup END
+" augroup ShowNerdTreeOnStart
+" 	autocmd VimEnter * NERDTree | wincmd p
+" augroup END
 
 augroup EnablePeepsightOnStart
 	autocmd VimEnter * :PeepsightEnable
@@ -138,6 +143,10 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#1B1D1E
 
 " Lua Config
 lua << EOF
+-- init
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 -- use defaults
 require('hlargs').setup()
 require("autoclose").setup()
@@ -147,6 +156,7 @@ require('Comment').setup()
 require('scrollview').setup()
 require('peepsight').setup()
 require('jabs').setup()
+require('nvim-tree').setup()
 
 -- customized configs
 require'nvim-treesitter.configs'.setup {
