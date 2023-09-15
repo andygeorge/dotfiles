@@ -16,9 +16,8 @@ set -x PATH $PATH ~/.cargo/bin
 set -x PATH $PATH ~/.pulumi/bin
 set -x PATH $PATH ~/Sync/_dev/bin/
 set -x PATH $PATH ~/.local/bin
-
-# golang setup
 set -x PATH $PATH /usr/local/go/bin
+set -x PATH $PATH /usr/local/node/bin
 
 # homebrew setup
 set -x PATH $PATH /home/linuxbrew/.linuxbrew/bin
