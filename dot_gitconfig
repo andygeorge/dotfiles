@@ -10,4 +10,6 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 [alias]
-  clog = log --no-merges --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit # a @bschmeck jam
+  clog = "log --no-merges --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit" # a @bschmeck jam
+	skip = "!git update-index --skip-worktree $1"
+	unskip = "!git update-index --no-skip-worktree $1"
