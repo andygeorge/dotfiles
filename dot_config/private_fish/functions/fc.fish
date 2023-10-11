@@ -1,3 +1,3 @@
 function fc
-	podman run --rm -it ghcr.io/andygeorge/fedora:latest
+	podman run --rm -it "https://ghcr.io/andygeorge/fedora:latest"
 end
