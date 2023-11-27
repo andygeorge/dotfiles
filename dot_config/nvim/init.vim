@@ -47,9 +47,12 @@ Plug 'nathanaelkane/vim-indent-guides' " fancy identation
 Plug 'phanviet/vim-monokai-pro'
 Plug 'AlexvZyl/nordic.nvim'
 
-"
 "" simple directory tree
-Plug 'dinhhuy258/sfm.nvim'
+" Plug 'dinhhuy258/sfm.nvim'
+
+"" NvimTree \t \q
+Plug 'nvim-tree/nvim-tree.lua'
+Plug 'nvim-tree/nvim-web-devicons'
 
 "" Plugin Graveyard
 " Plug 'ayu-theme/ayu-vim'
@@ -64,15 +67,13 @@ Plug 'dinhhuy258/sfm.nvim'
 " Plug 'rafi/awesome-vim-colorschemes'
 " Plug 'levouh/tint.nvim' " fancy tint on inactive windows
 " Plug 'preservim/nerdtree' " file system explorer
-" Plug 'nvim-tree/nvim-tree.lua'
-" Plug 'nvim-tree/nvim-web-devicons' " NvimTree \t \q
 
 call plug#end()
 
 " Shortcuts
 nnoremap <leader>vv :source $MYVIMRC<cr>
 nnoremap <leader>cc :!chezmoi apply<cr>
-nnoremap <leader>t :SFMToggle<cr>
+" nnoremap <leader>t :SFMToggle<cr>
 nnoremap <leader>pp :PlugUpdate<cr>
 nnoremap <leader>po :PlugClean!<cr>
 nnoremap <leader>ff :Telescope find_files<cr>
@@ -84,6 +85,8 @@ nnoremap <C-Down> :bnext<cr>
 nnoremap <C-Up> :bprevious<cr>
 vnoremap <C-Down> :MoveBlock(1)<cr>
 vnoremap <C-Up> :MoveBlock(-1)<cr>
+nnoremap <leader>t :NvimTreeToggle<cr>
+nnoremap <leader>q :NvimTreeFindFile<cr>
 
 "" I can't quit you
 noremap <C-a> ggVG
@@ -140,9 +143,7 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#1B1D1E
 "set listchars=tab:▸\ ,trail:·,nbsp:_
 "colorscheme focuspoint " from 'rafi/awesome-vim-colorschemes'
 "colorscheme monokai_pro " from 'phanviet/vim-monokai-pro'
-"nnoremap <leader>t :NvimTreeToggle<cr>
 "nnoremap <leader>w :NvimTreeFocus<cr>
-"nnoremap <leader>q :NvimTreeFindFile<cr>
 
 " Lua Config
 lua << EOF
@@ -159,8 +160,8 @@ require('Comment').setup()
 require('scrollview').setup()
 require('peepsight').setup()
 require('jabs').setup()
--- require('nvim-tree').setup()
-require('sfm').setup()
+require('nvim-tree').setup()
+-- require('sfm').setup()
 
 -- customized configs
 require'nvim-treesitter.configs'.setup {
