@@ -18,6 +18,7 @@ set -x PATH $PATH ~/Sync/_dev/bin/
 set -x PATH $PATH ~/.local/bin
 set -x PATH $PATH /usr/local/go/bin
 set -x PATH $PATH /usr/local/node/bin
+set -x PATH $PATH ~/repos/ente/mobile/thirdparty/bin
 
 # homebrew setup
 set -x PATH $PATH /home/linuxbrew/.linuxbrew/bin
