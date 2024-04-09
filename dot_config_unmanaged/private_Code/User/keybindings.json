@@ -70,7 +70,7 @@
     },
     {
         "key": "ctrl+q",
-        "command": "-workbench.action.quit"
+        "command": "workbench.action.toggleSidebarVisibility"
     },
     {
         "key": "ctrl+shift+f",
