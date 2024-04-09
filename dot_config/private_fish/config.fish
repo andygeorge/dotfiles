@@ -31,12 +31,9 @@ function fish_greeting
 end
 
 function ll --wraps=ls --wraps=exa --description 'List contents of directory using long format'
-    # ls -lh $argv
 		exa --long --header --accessed --git -a $argv
 end
-function lla --wraps=exa
-	exa -a --long --header --accessed --git $argv
-end
+
 function ls --wraps=exa --description 'Use exa instead of ls'
 	exa --header --accessed --git $argv
 end
