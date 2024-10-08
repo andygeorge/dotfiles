@@ -125,3 +125,6 @@ skip_notify = true
 [distrobox]
 #use_root = false
 #containers = ["archlinux-latest"]
+
+[containers]
+runtime = "podman"
