@@ -1,7 +1,7 @@
 set -x PATH $PATH /home/andygeorge/private/_dev/bin/
 #ssh-add -k ~/.ssh/k
 #ssh-agent
-clear
+# clear
 
 #set -x PATH $HOME/.rbenv/bin $PATH
 #rbenv init - | source
