@@ -1,3 +1,3 @@
 function jj
-  journalctl -o json -f $argv | tspin
+  journalctl -f $argv | tspin
 end
