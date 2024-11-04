@@ -28,6 +28,7 @@ set -x EDITOR vi
 
 function fish_greeting
     fortune
+	# ww # would be nice to output weather? but maybe not EVERY term...
 end
 
 function ll --wraps=ls --wraps=exa --description 'List contents of directory using long format'
