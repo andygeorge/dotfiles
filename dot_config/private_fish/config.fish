@@ -19,6 +19,7 @@ set -x PATH $PATH ~/.local/bin
 set -x PATH $PATH /usr/local/go/bin
 set -x PATH $PATH /usr/local/node/bin
 set -x PATH $PATH ~/repos/ente/mobile/thirdparty/bin
+set -x PATH $PATH /opt/nvim/
 
 # homebrew setup
 set -x PATH $PATH /home/linuxbrew/.linuxbrew/bin
