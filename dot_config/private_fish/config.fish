@@ -43,5 +43,3 @@ end
 function cll
   clear; ll
 end
-
-source ~/.asdf/asdf.fish
