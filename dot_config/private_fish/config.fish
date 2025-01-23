@@ -29,6 +29,7 @@ set -x EDITOR vi
 
 function fish_greeting
     fortune
+	fastfetch || neofetch
 	# ww # would be nice to output weather? but maybe not EVERY term...
 end
 
