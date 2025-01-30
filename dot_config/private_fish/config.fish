@@ -49,6 +49,10 @@ function qq --description 'run ollama'
 	ollama run llama2-uncensored:latest
 end
 
+function qqq --description 'kill ollama'
+	ollama stop llama2-uncensored:latest
+end
+
 function ii --description 'run ollama'
 	ollama run llama2-uncensored:latest
 end
