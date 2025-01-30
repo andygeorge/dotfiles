@@ -44,3 +44,7 @@ end
 function cll
   clear; ll
 end
+
+function qq --description 'run ollama'
+	ollama run llama2-uncensored:latest
+end
