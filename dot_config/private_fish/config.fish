@@ -46,13 +46,15 @@ function cll
 end
 
 function qq --description 'run ollama'
-	ollama run llama2-uncensored:latest
+	ollama run mistral-small:24b
 end
-
 function qqq --description 'kill ollama'
-	ollama stop llama2-uncensored:latest
+	ollama stop mistral-small:24b
 end
 
 function ii --description 'run ollama'
 	ollama run llama2-uncensored:latest
+end
+function iii --description 'run ollama'
+	ollama stop llama2-uncensored:latest
 end
