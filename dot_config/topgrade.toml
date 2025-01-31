@@ -10,9 +10,11 @@ disable = [
 	"snap",
 	"toolbx",
 	"vim",
-	# "brew_cask",
-	# "brew_formula",
+	"brew_cask",
+	"brew_formula",
 	"asdf",
+	"node",
+	"pnpm",
 ]
 
 # Ignore failures for these steps
