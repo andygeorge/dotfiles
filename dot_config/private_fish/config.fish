@@ -24,6 +24,9 @@ set -x PATH $PATH /opt/nvim/
 # homebrew setup
 set -x PATH $PATH /home/linuxbrew/.linuxbrew/bin
 
+# LM Studio CLI (lms)
+set -gx PATH $PATH /home/andygeorge/.lmstudio/bin
+
 # chezmoi
 set -x EDITOR vi
 
