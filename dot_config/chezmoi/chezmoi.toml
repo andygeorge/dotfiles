@@ -3,5 +3,5 @@
     autoPush = true
 
 [edit]
-		command = "code"
-		args = ["--wait"]
+		command = "nvim"
+		# args = ["--wait"]
