@@ -8,7 +8,7 @@ set -x PATH $PATH /home/andygeorge/private/_dev/bin/
 
 set -x PATH $PATH /home/andygeorge/go/bin
 set -x PATH $PATH /home/andygeorge/bin
-set -x PATH $PATH /home/andygeorge/bin/piper
+set -x PATH $PATH /home/andygeorge/piper
 set -x PATH $PATH /home/andygeorge/.cargo/bin
 set -x PATH $PATH /home/andygeorge/.pulumi/bin
 set -x PATH $PATH ~/go/bin
