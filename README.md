@@ -12,7 +12,7 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- -b ~/.local/bin init --apply andygeorge 
 ```sh
 sudo add-apt-repository -y ppa:zhangsongcui3371/fastfetch
 sudo apt update && sudo apt upgrade -y
-sudo apt install openssh-server fish -y
+sudo apt install openssh-server fish cockpit -y
 sudo systemctl start ssh
 sudo apt install -y rustup fortune-mod fastfetch
 rustup default stable
