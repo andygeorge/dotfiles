@@ -15,8 +15,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install -y openssh-server fish cockpit rustup fortune-mod fastfetch
 sudo systemctl start ssh
 rustup default stable
-cargo install exa
-cargo install tailspin
+cargo install exa tailspin topgrade
 chsh -s /usr/bin/fish
 ```
 
