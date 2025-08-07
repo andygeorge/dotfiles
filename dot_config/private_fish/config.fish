@@ -63,4 +63,4 @@ function iii --description 'run ollama'
 	ollama stop llama2-uncensored:latest
 end
 
-bash -e -c 'eval "$(ssh-agent -s)"'
+eval (ssh-agent -c); and ssh-add
