@@ -1,3 +1,3 @@
 function kk
-  pkill csd-power
+	#pkill csd-power
 end
