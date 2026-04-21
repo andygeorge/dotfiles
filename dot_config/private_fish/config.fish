@@ -63,4 +63,6 @@ function iii --description 'run ollama'
 	ollama stop llama2-uncensored:latest
 end
 
-eval (ssh-agent -c); and ssh-add
+if status is-interactive
+    eval (ssh-agent -c); and ssh-add
+end
