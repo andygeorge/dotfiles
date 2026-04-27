@@ -1,3 +1,4 @@
 function fnode
-  docker run --rm -it -v ./:/root/nodestuff/ $argv ghcr.io/andygeorge/fnode:latest
+  set -l tag (test -n "$argv[1]"; and echo $argv[1]; or echo latest)
+  docker run --rm -it -v ./:/root/nodestuff/ ghcr.io/andygeorge/fnode:$tag
 end
