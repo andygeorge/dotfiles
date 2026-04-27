@@ -18,8 +18,7 @@ Plug 'dstein64/vim-startuptime' " startup time profiling: :StartupTime
 Plug 'dstein64/nvim-scrollview' " scroll bar
 Plug 'wellle/context.vim' " fancy code context display
 Plug 'fedepujol/move.nvim' " fancy line/block movement (MoveLine/MoveBlock)
-Plug 'koenverburg/peepsight.nvim' " focus on a single function
-Plug 'gorbit99/codewindow.nvim' " fancy code minimap: \mm
+" Plug 'gorbit99/codewindow.nvim' " fancy code minimap: \mm
 Plug 'matbme/JABS.nvim' " fancy buffer switcher
 
 "" Telescope: fuzzy search: \ff \fg \fb
@@ -32,11 +31,10 @@ Plug 'MunifTanjim/nui.nvim'
 Plug 'rcarriga/nvim-notify'
 
 "" Syntax coloring
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'hashivim/vim-terraform'
 Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'm-demare/hlargs.nvim' " Fancy argument coloring
-Plug 'HiPhish/nvim-ts-rainbow2' " fancy rainbow parens etc
+" Plug 'HiPhish/nvim-ts-rainbow2' " fancy rainbow parens etc
 
 "" Colorschemes etc
 Plug 'nvim-tree/nvim-web-devicons'
@@ -113,9 +111,9 @@ let g:airline_powerline_fonts = 1
 " 	autocmd VimEnter * NERDTree | wincmd p
 " augroup END
 
-augroup EnablePeepsightOnStart
-	autocmd VimEnter * :PeepsightEnable
-augroup END
+"augroup EnablePeepsightOnStart
+"	autocmd VimEnter * :PeepsightEnable
+"augroup END
 
 augroup RestoreCursorShapeOnExit
 	autocmd!
@@ -157,25 +155,18 @@ require("better_escape").setup()
 require("noice").setup()
 require('Comment').setup()
 require('scrollview').setup()
-require('peepsight').setup()
 require('jabs').setup()
 require('nvim-tree').setup()
 -- require('sfm').setup()
 
 -- customized configs
-require'nvim-treesitter.configs'.setup {
-	ensure_installed = {"rust", "vim", "go", "yaml", "lua"},
-	highlight = { enable = true },
-	rainbow = { enable = true },
-}
-
-require('codewindow').setup({
-  exclude_filetypes = {
-		'nerdtree',
-	},
-})
-require('codewindow').apply_default_keybinds()
-require('codewindow').close_minimap()
+--require('codewindow').setup({
+--  exclude_filetypes = {
+--		'nerdtree',
+--	},
+--})
+--require('codewindow').apply_default_keybinds()
+--require('codewindow').close_minimap()
 
 -- Lua Graveyard
 -- require('codewindow').open_minimap()
