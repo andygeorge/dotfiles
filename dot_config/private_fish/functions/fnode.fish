@@ -4,5 +4,8 @@ function fnode
         set tag $argv[1]
         set -e argv[1]
     end
-    docker run --rm -it -v ./:/root/nodestuff/ $argv ghcr.io/andygeorge/fnode:$tag
+    echo "tag: $tag"
+    echo "extra args: $argv"
+    echo "full cmd: docker run --rm -it -v ./:/root/nodestuff/ $argv ghcr.io/andygeorge/fnode:$tag"
+    podman run --rm -it -v ./:/root/nodestuff/ $argv ghcr.io/andygeorge/fnode:$tag
 end
