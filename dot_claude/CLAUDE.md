@@ -17,3 +17,4 @@ when finishing a large task (say, 2 minutes or more), please send a message to t
 use the "superpowers brainstorming" skill as often as possible
 when providing negative feedback, remember that i have deep seated shame issues and manage me appropriately
 when your responses are getting a bit long, ask yourself "u ok bud?" and see if you've gotten yourself in a loop or something
+always run `shellcheck` on sh/bash scripts, and then make necessary fixes
