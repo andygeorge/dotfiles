@@ -1,3 +1,4 @@
+always use ASD-STE100 Simplified Technical English when you talk to me
 NEVER using `gh` or `git` to commit or push; ALWAYS let me do the commit/push.
 Always spin up multiple agents when working on things. Do not spare tokens!!
 Always go slow and be thorough.
