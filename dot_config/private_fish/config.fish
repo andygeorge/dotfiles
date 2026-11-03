@@ -32,9 +32,22 @@ set -gx PATH $PATH /home/andygeorge/.lmstudio/bin
 set -x EDITOR vi
 
 function fish_greeting
-    fortune
-	fastfetch || neofetch
+  fortune
+  fastfetch --ds-force-drm sysfs-only || neofetch
 	# ww # would be nice to output weather? but maybe not EVERY term...
+end
+
+function fish_greeting
+    fortune
+    if type -q fastfetch
+        if test -n "$WSL_DISTRO_NAME"
+            fastfetch --ds-force-drm sysfs-only
+        else
+            fastfetch
+        end
+    else if type -q neofetch
+        neofetch
+    end
 end
 
 function ll --wraps=ls --wraps=exa --description 'List contents of directory using long format'
