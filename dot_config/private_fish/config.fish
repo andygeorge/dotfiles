@@ -77,5 +77,15 @@ function iii --description 'run ollama'
 end
 
 if status is-interactive
-    eval (ssh-agent -c); and ssh-add
+    # reuse ONE agent: existing/forwarded sock > systemd user ssh-agent.socket > start one
+    # (old `eval (ssh-agent -c)` per shell leaked 236 agents / 227 stuck logind sessions)
+    if not test -S "$SSH_AUTH_SOCK"
+        if set -q XDG_RUNTIME_DIR; and test -S "$XDG_RUNTIME_DIR/ssh-agent.socket"
+            set -gx SSH_AUTH_SOCK "$XDG_RUNTIME_DIR/ssh-agent.socket"
+        else
+            eval (ssh-agent -c)
+        end
+    end
+    # only prompt when the agent has no keys (exit 1) or is unreachable (exit 2)
+    ssh-add -l >/dev/null 2>&1; or ssh-add
 end
