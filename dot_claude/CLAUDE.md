@@ -26,3 +26,4 @@ always run `shellcheck` on sh/bash scripts, and then make necessary fixes
   - `haiku` (= Haiku 4.5 as of 2026-10): only trivial one-shot lookups. It has 200K context and no effort control. If unsure a task is trivial, use `sonnet`.
   - `fable`: only when I ask for it by name.
 - Agent-team teammates follow the same split. Set `model` even when a plugin's spawn steps omit it.
+
